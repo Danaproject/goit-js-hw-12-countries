@@ -5,4 +5,4 @@ function createMarkup(countries) {
     refs.countriesContainer.insertAdjacentHTML('beforeend', countryTpl(countries));
 }
 
-export default createMarkup;
+export default createMarkup

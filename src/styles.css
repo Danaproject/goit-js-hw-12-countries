@@ -1,0 +1,31 @@
+body {
+  background-color: lightgray;
+}
+#input {
+  margin-top: 40px;
+  margin-left: 40px;
+  padding-left: 8px;
+  background-color: transparent;
+  width: 320px;
+  height: 40px;
+  font-size: 18px;
+}
+.countries {
+  margin-left: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+.name {
+  font-size: 36px;
+}
+.capital {
+  font-size: 18px;
+}
+.population {
+  font-size: 18px;
+}
+.languages {
+  font-size: 18px;
+}
+.language {
+  font-size: 18px;
+}
