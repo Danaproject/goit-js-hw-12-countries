@@ -1,4 +1,4 @@
-import countryTpl from './country.hbs';
+import countryTpl from '../country.hbs';
 import refs from './refs';
 
 function createMarkup(countries) {

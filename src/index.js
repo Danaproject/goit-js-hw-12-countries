@@ -1,8 +1,8 @@
 import './styles.css';
-import refs from './refs';
+import refs from './js/refs';
 import _debounce from 'lodash.debounce';
-import fetchCountries from './fetchCountries';
-import generateAnswer from './generateAnswer';
+import fetchCountries from './js/fetchCountries';
+import generateAnswer from './js/generateAnswer';
 
 refs.input.addEventListener('input', _debounce(event => {
 
