@@ -4,17 +4,17 @@
     <p class="name">{{name}}</p>
 </h2>
 <div class="content">
-    <div class="content__info">
-        <p class="content__info-capital"><b>Capital: </b>{{capital}}</p>
-        <p class="content__info-population"><b>Population: </b>{{population}}</p>
-        <p class="content__info-languages"><b>Languages:</b></p>
-        <ul class="content__info-list">
+    <div class="content__item">
+        <p class="content__item-capital"><b>Capital: </b>{{capital}}</p>
+        <p class="content__item-population"><b>Population: </b>{{population}}</p>
+        <p class="content__item-languages"><b>Languages: </b></p>
+        <ul class="content__item-list">
             {{#each languages}}
-            <li class="content__info-language">{{this.name}}</li>
+            <li class="content__item-language">{{this.name}}</li>
             {{/each}}
         </ul>
     </div>
-    <div class="content__image">
+    <div class="content__item">
         <img src="{{flag}}" alt="flag" width="320">
     </div>
 </div>

@@ -32,14 +32,14 @@ body {
 .content {
   display: flex;
 }
-.content__info {
+.content__item {
   display: block;
   width: 320px;
 }
-.content__info-capital,
-.content__info-population,
-.content__info-languages,
-.content__info-language,
+.content__item-capital,
+.content__item-population,
+.content__item-languages,
+.content__item-language,
 .suggestions {
   font-size: 20px;
 }
