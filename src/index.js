@@ -6,12 +6,13 @@ import generateAnswer from './js/generateAnswer';
 
 refs.input.addEventListener('input', _debounce(event => {
 
-  const searchQuery = event.target.value;
+  const searchQuery = event.target.value.trim();
   refs.countriesContainer.innerHTML = '';
   refs.input.innerHTML = '';
 
-  if (searchQuery) fetchCountries(searchQuery).then(generateAnswer);
-}, 500),
+  if (searchQuery) { 
+    fetchCountries(searchQuery).then(generateAnswer);
+  }}, 500),
 );
 
 

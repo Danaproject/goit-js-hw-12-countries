@@ -1,12 +1,8 @@
 import refs from './refs';
 
 function createList(countries) {
-    let listItems = [];
-    countries.map(item => {
-        listItems.push(`<ul class="suggestions"><li>${item.name}</li></ul>`)
-     });
-    refs.countriesContainer.innerHTML = '';
-    refs.countriesContainer.insertAdjacentHTML('beforeend', listItems.join(''));
+    const listItems = countries.map(({ name }) => `<ul class="suggestions"><li>${name}</li></ul>`).join('');
+    refs.countriesContainer.insertAdjacentHTML('beforeend', listItems);
 }
 
 export default createList;
